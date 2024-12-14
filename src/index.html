@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/yollo-logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Daily Goals</title>
+  </head>
+  <body>
+    <div class="app-container">
+        <div class="goal-tracker">
+          <header class="tracker-header">
+            <img src="../assets/image.png" alt="Goal Tracker Logo" class="tracker-logo" />
+            <h1 class="tracker-title">Daily Goal Tracker</h1>
+          </header>
+    
+          <form id="goal-form" class="goal-form">
+            <div class="input-group">
+              <input
+                placeholder="Add a new goal..."
+                type="text"
+                id="goal-input"
+                class="goal-input"
+              />
+              <button type="submit" class="btn btn-add" id="add-goal-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </form>
+    
+          <ul class="goal-list" id="goal-list">
+            <li class="goal-item">
+              <span class="goal-text">Exercise for 1hr</span>
+              <button class="btn btn-delete">
+                <i class="fa-solid fa-eraser"></i>
+              </button>
+            </li>
+          </ul>
+    
+          <div class="action-group">
+            <button class="btn btn-clear" id="clear-goals-btn">Clear All</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

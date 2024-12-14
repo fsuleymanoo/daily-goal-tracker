@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    /* Color Palette */
+    --bg-color: #0a192f;
+    --primary-color: #00eaff;
+    --secondary-color: #ff6b6b;
+    --input-placeholder-color: rgba(0, 234, 255, 0.3);
+    --item-bg-color: rgba(0, 234, 255, 0.1);
+    --item-border-color: #00eaff;
+    --text-color: #00eaff;
+  
+    /* Effects */
+    --box-shadow: 0 0 10px rgba(0, 234, 255, 0.2);
+    --box-shadow-hover: 0 0 20px rgba(0, 234, 255, 0.4);
+  
+    /* Typography */
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .goal-tracker {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Header */
+  .tracker-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tracker-logo {
+    width: 10%;
+  }
+  
+  .tracker-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+  
+  /* Form */
+  .goal-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+  }
+  
+  .goal-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .goal-input::placeholder {
+    color: var(--input-placeholder-color);
+    font-style: italic;
+  }
+  
+  .btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-add {
+    font-size: 1.5rem;
+  }
+  
+  .btn:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Goal List */
+  .goal-list {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .goal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--item-bg-color);
+    border: 1px solid var(--item-border-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+  }
+  
+  .goal-item:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-2px);
+  }
+  
+  .goal-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .btn-delete {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+  }
+  
+  .btn-delete:hover {
+    color: #ff3030;
+  }
+  
+  /* Action Group */
+  .action-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-clear {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--primary-color);
+    background: var(--item-bg-color);
+    color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .btn-clear:hover {
+    box-shadow: var(--box-shadow-hover);
+    color: #ff3030;
+  }
